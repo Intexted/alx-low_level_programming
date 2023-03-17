@@ -9,16 +9,16 @@
 int main(void)
 {
 	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	char ALP[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-	int i;
+	char ALP[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i, j;
 
 	for (i = 0; i < 26; i++)
 	{
 		putchar(alp[i]);
 	}
-	for (i = 0; i < 26; i++)
+	for (j = 0; j < 26; j++)
 	{
-		putchar(ALP[i]);
+		putchar(ALP[j]);
 	}
 	putchar('\n');
 	return (0);
