@@ -1,32 +1,39 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 89.
+ * main - Prints numbers between 012 to 789.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, e;
+	int i, e, g;
 
 	i = 48;
 	e = 48;
+	k = 48;
 
 	while (e < 58)
 	{
 		i = 48;
 		while (i < 58)
 		{
-			if (e != i && e < i)
+			k = 48;
+			while (k < 58)
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
+				if (e != i && e != k && i != k && e < i && i < k)
 				{
-					break;
+					putchar(e);
+					putchar(i);
+					putchar(k);
+					if (i == 56 && e == 55 && k == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
+				k++;
 			}
 			i++;
 		}
@@ -34,4 +41,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
+}}
